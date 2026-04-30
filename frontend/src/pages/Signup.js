@@ -19,7 +19,10 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://https://job-portal-iuyl.onrender.com/api/auth/signup", form);
+      const res = await axios.post(
+        "https://job-portal-iuyl.onrender.com/api/auth/signup",
+        form
+      );
       alert(res.data.message);
     } catch (error) {
       alert(error.response?.data?.message || "Signup failed");
@@ -55,7 +58,9 @@ function Signup() {
           onChange={handleChange}
         />
 
-        <button type="submit" className="primary-btn">Signup</button>
+        <button type="submit" className="primary-btn">
+          Signup
+        </button>
       </form>
     </div>
   );

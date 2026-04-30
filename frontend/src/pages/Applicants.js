@@ -11,7 +11,7 @@ function Applicants() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        `http://https://job-portal-iuyl.onrender.com/api/applications/job/${jobId}`,
+        `https://job-portal-iuyl.onrender.com/api/applications/job/${jobId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -35,7 +35,7 @@ function Applicants() {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        `http://https://job-portal-iuyl.onrender.com/api/applications/status/${id}`,
+        `https://job-portal-iuyl.onrender.com/api/applications/status/${id}`,
         { status },
         {
           headers: {
@@ -69,7 +69,7 @@ function Applicants() {
           <p>
             <b>Resume:</b>{" "}
             <a
-              href={`http://https://job-portal-iuyl.onrender.com/uploads/${app.resume}`}
+              href={`https://job-portal-iuyl.onrender.com/uploads/${app.resume}`}
               target="_blank"
               rel="noreferrer"
             >

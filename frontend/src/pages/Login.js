@@ -22,7 +22,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://https://job-portal-iuyl.onrender.com/api/auth/login",
+        "https://job-portal-iuyl.onrender.com/api/auth/login",
         form
       );
 

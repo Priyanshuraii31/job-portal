@@ -10,7 +10,7 @@ function Profile() {
         const token = localStorage.getItem("token");
 
         const res = await axios.get(
-          "http://https://job-portal-iuyl.onrender.com/api/auth/profile",
+          "https://job-portal-iuyl.onrender.com/api/auth/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`

@@ -17,7 +17,7 @@ function EditJob() {
   useEffect(() => {
     const fetchJob = async () => {
       try {
-        const res = await axios.get(`http://https://job-portal-iuyl.onrender.com/api/jobs/${jobId}`);
+        const res = await axios.get(`https://job-portal-iuyl.onrender.com/api/jobs/${jobId}`);
         setForm(res.data.job);
       } catch (error) {
         alert("Job fetch failed");
@@ -41,7 +41,7 @@ function EditJob() {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        `http://https://job-portal-iuyl.onrender.com/api/jobs/${jobId}`,
+        `https://job-portal-iuyl.onrender.com/api/jobs/${jobId}`,
         form,
         {
           headers: {

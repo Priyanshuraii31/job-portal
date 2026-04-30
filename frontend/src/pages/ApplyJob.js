@@ -20,7 +20,7 @@ function ApplyJob() {
       formData.append("coverLetter", coverLetter);
 
       const res = await axios.post(
-        `http://https://job-portal-iuyl.onrender.com/api/applications/apply/${jobId}`,
+        `https://job-portal-iuyl.onrender.com/api/applications/apply/${jobId}`,
         formData,
         {
           headers: {

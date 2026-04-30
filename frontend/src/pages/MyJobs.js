@@ -10,7 +10,7 @@ function MyJobs() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://https://job-portal-iuyl.onrender.com/api/jobs/my-jobs",
+        "https://job-portal-iuyl.onrender.com/api/jobs/my-jobs",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -34,7 +34,7 @@ function MyJobs() {
       const token = localStorage.getItem("token");
 
       const res = await axios.delete(
-        `http://https://job-portal-iuyl.onrender.com/api/jobs/${id}`,
+        `https://job-portal-iuyl.onrender.com/api/jobs/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`

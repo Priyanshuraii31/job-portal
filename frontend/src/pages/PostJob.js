@@ -24,7 +24,7 @@ function PostJob() {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        "http://https://job-portal-iuyl.onrender.com/api/jobs/post",
+        "https://job-portal-iuyl.onrender.com/api/jobs/post",
         form,
         {
           headers: {

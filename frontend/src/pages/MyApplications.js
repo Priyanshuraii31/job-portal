@@ -9,7 +9,7 @@ function MyApplications() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://https://job-portal-iuyl.onrender.com/api/applications/my-applications",
+        "https://job-portal-iuyl.onrender.com/api/applications/my-applications",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -33,7 +33,7 @@ function MyApplications() {
       const token = localStorage.getItem("token");
 
       const res = await axios.delete(
-        `http://https://job-portal-iuyl.onrender.com/api/applications/${id}`,
+        `https://job-portal-iuyl.onrender.com/api/applications/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -67,7 +67,7 @@ function MyApplications() {
           <p>
             <b>Resume:</b>{" "}
             <a
-              href={`http://https://job-portal-iuyl.onrender.com/uploads/${app.resume}`}
+              href={`https://job-portal-iuyl.onrender.com/uploads/${app.resume}`}
               target="_blank"
               rel="noreferrer"
             >

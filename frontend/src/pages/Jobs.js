@@ -8,7 +8,7 @@ function Jobs() {
 
   const fetchJobs = async () => {
     try {
-      const res = await axios.get("http://https://job-portal-iuyl.onrender.com/api/jobs");
+      const res = await axios.get("https://job-portal-iuyl.onrender.com/api/jobs");
       setJobs(res.data.jobs);
     } catch (error) {
       alert("Jobs fetch failed");
@@ -24,7 +24,7 @@ function Jobs() {
       const token = localStorage.getItem("token");
 
       const res = await axios.delete(
-        `http://https://job-portal-iuyl.onrender.com/api/jobs/${jobId}`,
+        `https://job-portal-iuyl.onrender.com/api/jobs/${jobId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
